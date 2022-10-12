@@ -12,11 +12,14 @@
 
 <body>
     <script>
-        const hobbies = ["Sport", "Cooking", "Reading", "Gand marana", "Maa chudana"];
-        const [first, second, ...niceYrr] = hobbies;// here ... is a spread/rest operator depends on the situation we are using
-        alert(first);
-        alert(second);
-        alert(niceYrr);
+        function fun(...niceYrr) {
+            var result = "";
+            for (let i = 0; i < niceYrr.length; i++) {
+                result += niceYrr[i] + " ";
+            }
+            return result;
+        }
+        alert(fun("Sport", "Cooking", "Reading", "Gand marana", "Maa chudana"));
     </script>
 </body>
 
