@@ -12,7 +12,16 @@
 
 <body>
     <script>
-
+        function outer() {
+            var a = 20; // outer variable
+            function inner() {
+                var b = 40; // inner variable
+                alert(a + b);
+            }
+            return inner; // return a function
+        }
+        var x = outer();
+        alert(x());
     </script>
 </body>
 
