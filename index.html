@@ -6,9 +6,15 @@
 </head>
 
 <body>
-    <h2>Call BackFunc</h2>
+    <h2>Call BackFunction</h2>
     <script>
-
+        function fun(x, callBackFunc) {
+            callBackFunc(x);
+        }
+        function temp(x) {
+            alert(x);
+        }
+        fun(3, temp);
     </script>
 </body>
 
