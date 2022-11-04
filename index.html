@@ -7,25 +7,11 @@
 
 <body>
     <h2>Regular Expressions in Js</h2>
-    <p>
-        Predefined obj in Js <br>
-        Regular Expression object<br>
-        Question1: client side validation vs server side validation<br><br>
-        /pattern/ Modifiers:<br>
-        g: global search <br>
-        i: case-insensitive matching <br>
-        m: multi-line matching <br><br>
-        Matacharacters: Characters with a speacial meaning <br>
-        \b: Word boundary ---- /\bor/ : it matches organic but it will not match with traitors and normal<br>
-        \d: numeral ---- /\d\d\d/: it matches 212 but it will not match with B17 <br>
-        \s : single white space ---- /over\sbite/ : it will match over bite but not match with overbite<br>
-        \w : letter, numeral, _ ---- /A\w/ : it will match with A1 or AA(yes) A_(Yes)<br>
-        . : Any Characters ---- /.../ : It match with ABC (yes) 1+3(yes)<br>
-        [...] CharacterSet ---- /[AN]BC : it matches ABC NBC but not matches with BBC<br>
-    <h4>Counting Matacharacters</h4>
-    </p>
     <script>
-
+        var str = "To be, or not to be, that is the question";
+        var regex = /be/g;
+        var newstr = str.replace(regex, "exist");
+        alert(newstr);
     </script>
 </body>
 
