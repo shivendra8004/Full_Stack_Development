@@ -7,13 +7,12 @@
 
 <body>
     <h2>Regular Expressions in Js</h2>
-    <h5>Postional Matacharacters</h5>
-    <p>
-        ^ : It matches at beginning of a string or line<br>
-        $ : Matches at the end of a string or line
-    </p>
     <script>
-
+        function validate() {
+            var patt = /^[a-z|A-Z]\w+@\w+./;
+            return patt.test("prateek_pandey@gmail.com");
+        }
+        alert(validate());
     </script>
 </body>
 
